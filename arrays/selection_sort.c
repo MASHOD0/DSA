@@ -16,4 +16,7 @@ int main(void){
         array[i] = array[min_index];
         array[min_index] = temp;
     }
+    for(i = 0; i < 5; i++){
+        printf("%d ", array[i]);
+    }
 }
