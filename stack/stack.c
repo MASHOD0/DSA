@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<ctype.h>
-// prototypes
+#define STACK_SIZE 10
 
 int main(void){
     //implement a stack using an integer array
     //the stack is implemented using a fixed size array
-    int stack[10];
+    int stack[STACK_SIZE];
     int top = -1;
     int choice;
             do{
