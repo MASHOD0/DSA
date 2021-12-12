@@ -10,7 +10,7 @@ int main(void){
     }
     for(int i=0;i<8;i++){
         if(in[i]==1){
-            in[i]=0;
+            in[i]= ~in[i];
         }
         else if(in[i]==0){
             in[i]=1;
