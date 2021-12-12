@@ -14,7 +14,7 @@ void main()
 {
 	char infix[15], postfix[15],s[12];
 	int i,j=0,top=-1;
-	//clrscr();
+	
 	printf("Enter an valid infix expression:\n");
 	gets(infix);
 	push('#',&top,s);
