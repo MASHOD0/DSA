@@ -74,6 +74,79 @@ void printList(node head){
     }
     printf("\n");
 }
+void printListReverse(node head){
+    if(head == NULL){
+        return;
+    }
+    printListReverse(head->next);
+    printf("%d ", head->data);
+}
+void bubble_sort(node head){
+    printf("bubble sort\n");
+    node curr = head;
+    while(curr != NULL){
+        node next = curr->next;
+        while(next != NULL){
+            if(curr->data > next->data){
+                int temp = curr->data;
+                curr->data = next->data;
+                next->data = temp;
+            }
+            next = next->next;
+        }
+        curr = curr->next;
+    }
+}
+void selection_sort(node head){
+    printf("selection sort\n");
+    node curr = head;
+    while(curr != NULL){
+        node min = curr;
+        node next = curr->next;
+        while(next != NULL){
+            if(next->data < min->data){
+                min = next;
+            }
+            next = next->next;
+        }
+        int temp = curr->data;
+        curr->data = min->data;
+        min->data = temp;
+        curr = curr->next;
+    }
+}
+void merge_sort(node head){
+    printf("merge sort\n");
+    node curr = head;
+    while(curr != NULL){
+        node next = curr->next;
+        while(next != NULL){
+            if(curr->data > next->data){
+                int temp = curr->data;
+                curr->data = next->data;
+                next->data = temp;
+            }
+            next = next->next;
+        }
+        curr = curr->next;
+    }
+}
+void quick_sort(node head){
+    printf("quick sort \n");
+    node curr = head;
+    while(curr != NULL){
+        node next = curr->next;
+        while(next != NULL){
+            if(curr->data > next->data){
+                int temp = curr->data;
+                curr->data = next->data;
+                next->data = temp;
+            }
+            next = next->next;
+        }
+        curr = curr->next;
+    }
+}
 int main(){
     node head = NULL;
     while(1){
@@ -83,7 +156,13 @@ int main(){
         printf("3. Delete Node in the begining\n");
         printf("4. Delete Node at position\n");
         printf("5. Print List\n");
-        printf("6. Exit\n");
+        printf("6. Print List in Reverse\n");
+        printf("7. Bubble Sort\n");
+        printf("8. Selection Sort\n");
+        printf("9. Merge Sort\n");
+        printf("10. Quick Sort\n");
+        printf("11. Print reverse of list\n");
+        printf("12. Exit\n");
         printf("Enter your choice: ");
         int choice;
         scanf("%d", &choice);
@@ -119,7 +198,29 @@ int main(){
                 printList(head);
                 break;
             case 6:
+                printListReverse(head);
+                break;
+            case 7:
+                bubble_sort(head);
+                printList(head);
+                break;
+            case 8:
+                selection_sort(head);
+                printList(head);
+                break;
+            case 9:
+                merge_sort(head);
+                printList(head);
+                break;
+            case 10:
+                quick_sort(head);
+                printList(head);
+                break;
+            case 11:
+                printListReverse(head);
+            case 12:
                 return 0;
+
             default:
                 printf("Invalid choice\n");
         }
