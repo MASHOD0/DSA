@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #define STACK_SIZE 10
 
-void push (char  stack[STACK_SIZE], int *top, char ch){
+void push (char stack[STACK_SIZE], int *top, char ch){
     if(*top == STACK_SIZE - 1){
         printf("stack overflow");
     }else{
@@ -41,6 +41,4 @@ void main(){
     }else{
         printf("Invalid String\n");
     }
-        
-
 }
