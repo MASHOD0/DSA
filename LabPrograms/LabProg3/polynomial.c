@@ -77,7 +77,7 @@ NODE addpoly(NODE poly1, NODE poly2, NODE poly){
             poly = insertr(pres_p2->c,pres_p2->p, poly);
             pres_p2 = pres_p2->link;
         }else{
-            poly = insertr(pres_p1->c + pres_p2->c, pres_p1->p + pres_p2->p, poly);
+            poly = insertr(pres_p1->c + pres_p2->c, pres_p1->p , poly);
             pres_p1 = pres_p1->link;
             pres_p2 = pres_p2->link;
         }
