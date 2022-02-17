@@ -20,13 +20,13 @@ int main () {
     while (count >= 0) {
         t1 = a[2*count+1]-48;
         t2 = a[2*count+2]-48;
-        if (a[count] == ' /')
+        if (a[count] == '/')
             res = t1/t2;
-        else if (a[count] == ' *')
+        else if (a[count] == '*')
             res = t1*t2;
-        else if (a[count] == ' +')
+        else if (a[count] == '+')
             res = t1+t2;
-        else if (a[count] == ' -')
+        else if (a[count] == '-')
             res = t1-t2;
         else
             printf ("Invalid Expression\n");
