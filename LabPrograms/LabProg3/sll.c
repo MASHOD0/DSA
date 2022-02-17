@@ -15,19 +15,19 @@ NODE insertLoc(NODE first){
     scanf("%d", &temp->info);
     temp->link = NULL;
 
-    if(first == NULL){
+    if(first == NULL){ // base case
         if(loc == 1)
            first = temp;
         else
             printf("invalid location\n");
-    }else if (loc == 1){
+    }else if (loc == 1){ //edge case
         temp->link = first;
         first = temp;
     }else{
         cur = first;
         count = 1;
         while(cur != NULL){
-            if (count = loc - 1){
+            if (count == loc - 1){
                 temp -> link = cur -> link;
                 cur -> link = temp;
                 break;
@@ -41,7 +41,7 @@ NODE insertLoc(NODE first){
         return first;
     }
 }
-NODE delete (NODE first){
+NODE delete  (NODE first){
     NODE temp;
     if (first == NULL){
         printf("List empty\n");
