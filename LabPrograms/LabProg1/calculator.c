@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+
 #define STACK_SIZE 10
 
 void push (char stack[STACK_SIZE], int *top, char ch){
