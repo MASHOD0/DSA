@@ -24,11 +24,11 @@ void insert(int data){
 void delete(int key){
     int flag = 0;
     NODE prev, cur, next;
-    if (first == NULL){
+    if (first == NULL){ // base case - 0 elements in the list
         printf("List Empty\n");
         return;
     }
-    if(first ->rlink == NULL){
+    if(first ->rlink == NULL){// edge case - one element in the list
         if(first->info == key){
             printf("%d is the deleted element", first->info);
             free(first);
@@ -36,7 +36,7 @@ void delete(int key){
             return;
         }
     }
-    if(key == first ->info){
+    if(key == first ->info){// edge case - checking if the first element is the key
         printf("\n %d is deleted\n", first->info);
         cur = first;
         first = first ->rlink;
@@ -45,7 +45,7 @@ void delete(int key){
         cur = NULL;
         return;
     }
-    if(key == last->info){
+    if(key == last->info){//edge case - checking if the last element is the key
         printf("\n %d is deleted\n", last->info);
         cur = last;
         last = last ->llink;
