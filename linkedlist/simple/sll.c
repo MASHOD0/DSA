@@ -80,6 +80,7 @@ void printListReverse(node head){
     }
     printListReverse(head->next);
     printf("%d ", head->data);
+    printf("\n");
 }
 void bubble_sort(node head){
     printf("bubble sort\n");
