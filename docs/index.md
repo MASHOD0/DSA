@@ -1,19 +1,19 @@
 # Data Structures And Applications
 ## Syllabus
 
-### Module1: BASIC CONCEPTS
+### [Module1: BASIC CONCEPTS](https://drive.google.com/file/d/12z3imqyqPi7UXzgasdV9Le30T5z_Zh4a/view?usp=sharing)
 - Introduction to datastructures and its classification
 - The need for data structure
 - Algorithm Specification
-- Performance analysis & measurements
+- [Performance analysis & measurements](https://drive.google.com/file/d/10S6oaNk0RkKP_zPzfDA-TmlvD3aYTeoL/view?usp=sharing)
 - Sparse Matrix
 
 ### Module2: STACKS AND QUEUES
-- Introduction to stacks
+- [Introduction to stacks](https://drive.google.com/file/d/1WfiedGH6f15RKXa2GhtV4jnLV2JFNU-V/view?usp=sharing)
 - Stacks using Dynamic Arrays
 - Conversion of Infix expression to Postfix expression
 - Evaluation of Postfix Expressions
-- Introduction to Queues
+- [Introduction to Queues](https://drive.google.com/file/d/1SXgwtu6hSYiXgoK8ywLW5hXSWlS-teTH/view?usp=sharing)
 - Types of Queues:
     - Odinary queue,
     - Circular Queue
@@ -79,6 +79,7 @@ to access the student’s data whenever required by college. Using suitable data
 a Binary tree using arrays and display the tree.](https://github.com/MASHOD0/DSA/blob/main/LabPrograms/labprog5/bt.c)
 - [Application: Compilers use expression trees to represent mathematical expressions where the leaf nodes represent the operands and the internal nodes represent the operators. Develop a program to evaluate such an expression tree with non-negative
 integers as operands and the arithmetic operators ‘+’, ‘-‘, ‘*’and ‘/’.](https://github.com/MASHOD0/DSA/blob/main/LabPrograms/labprog5/expression_tree.c)
+
 #### Binary Search Tree
 - [Program 6: Design, develop and execute a program in C to create
 a Binary search tree and perform preorder traversals.](https://github.com/MASHOD0/DSA/blob/main/LabPrograms/labprog6/bst.c)
