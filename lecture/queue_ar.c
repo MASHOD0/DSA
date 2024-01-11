@@ -5,24 +5,24 @@
 #include<conio.h>
 
 
-int rear=-1; 
-int front=0;
-int q[4];
-int size=4;
+int rear=-1; // initalize rear at -1
+int front=0; //initalize front at 0
+int q[4]; // create an array of size 4
+int size=4; // store the size in a size variable
 
 
 void insertion()
 {
-	int elem;
+	int elem; // declare the element to insert into the queue
 	if(rear==size-1)
 	{
-		printf("Insertion operation not possible\n");
+		printf("Insertion operation not possible\n"); // if rear is at the end of the list then no more elements can be added
 	}
 	else
 	{
-		printf("Enter an element\n");
-		scanf("%d",&elem);
-		rear++;
+		printf("Enter an element\n");   
+		scanf("%d",&elem);   // take element input
+		rear++; // increment rear and add the element 
 		q[rear]=elem;
 	}
 }
@@ -31,14 +31,14 @@ void insertion()
 void deletion()
 {
 
-	if((rear==-1)||(front>rear))
+	if((rear==-1)||(front>rear)) // the list is empty 
 	{
-		printf("Deletion not possible\n");
+		printf("Deletion not possible\n"); 
 	}
 	else
 	{
-		printf("Element deleted is : %d\n",q[front]);
-		++front;
+		printf("Element deleted is : %d\n",q[front]); // print the element to delete
+		++front; // move front
 	}
 }
 
@@ -48,13 +48,13 @@ void disp()
 	int i;
 	if((rear==-1)||(front>rear))
 	{
-		printf("Nothing to display\n");
+		printf("Nothing to display\n"); // when there are no elements to display
 	}
 	else
 	{
 		for(i=front;i<=rear;i++)
 		{
-			printf("%d\n",q[i]);
+			printf("%d\n",q[i]); // from front move towards the rear and print all the elements 
 		}
 	}
 }
